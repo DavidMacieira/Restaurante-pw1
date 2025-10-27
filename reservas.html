@@ -41,18 +41,18 @@ li a:hover {
    <li><a href="./reservas.html">Reservar</a></li>
 </ul>
 
-<table>
+<table class="form-table">
   <tr>
     <td><label for="name">Nome:</label></td>
-    <td column-span="3"><input type="text" id="name" name="name"></td>
+    <td colspan="3"><input type="text" id="name" name="name"></td>
   </tr>
   <tr>
     <td><label for="email">Email:</label></td>
-    <td column-span="3"><input type="email" id="email" name="email"></td>
+    <td colspan="3"><input type="email" id="email" name="email"></td>
   </tr>
   <tr>
     <td><label for="date">Data da Reserva:</label></td>
-    <td column-span="3"><input type="datetime-local" id=datetime-local name ="date" min="2025-10-20T00:00"  value="2025-10-20T00:00"></td> 
+    <td colspan="3"><input type="datetime-local" id="date" name="date" min="2025-10-20T00:00"  value="2025-10-20T00:00"></td>
   </tr>
   <tr>
     <td><label for="numero_pessoas">Número de Pessoas:</label></td>
@@ -72,7 +72,10 @@ li a:hover {
     </td>
   </tr>
   <tr>
+</tr>
+  <tr>
     <td colspan="2"><input type="submit" value="Reservar"></td>
+  </tr>
 </table>
 
 </body>

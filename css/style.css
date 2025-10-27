@@ -49,21 +49,82 @@
 
 }
 
-td, th {  
-  border: 1px solid #ddd;
-  padding: 10px;
-}
+        /* Tables for menu lists */
+        .styled-table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 90%;
+            max-width: 700px;
+            margin: 20px auto;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fff;
+        }
 
-tr:nth-child(even) {background-color: #d7d7d7;}
+        .styled-table thead {
+            background-color: rgb(68, 101, 0);
+            color: #fff;
+            text-align: left;
+            font-weight: 700;
+        }
 
-tr:hover {background-color: #ddd;}
+        .styled-table th, .styled-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #f0f0f0;
+        }
 
-th {
-  padding-top: 12px;
-  padding-bottom: 10px;
-  text-align: left;
-  background-color: rgb(68, 101, 0);
-  
-  color: white;
-}
+        .styled-table tbody tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        .styled-table tbody tr:hover {
+            background-color: #f3f3f3;
+        }
+
+        /* Table used as a form layout */
+        .form-table {
+            width: 100%;
+            max-width: 720px;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        .form-table td {
+            padding: 8px;
+            vertical-align: middle;
+        }
+
+        .form-table input[type="text"],
+        .form-table input[type="email"],
+        .form-table input[type="datetime-local"],
+        .form-table select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .form-table input[type="submit"] {
+            background-color: rgb(68,101,0);
+            color: #fff;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .form-table input[type="submit"]:hover {
+            background-color: rgb(54,82,0);
+        }
+
+        @media (max-width: 600px) {
+            .styled-table, .form-table {
+                width: 95%;
+            }
+            .styled-table th, .styled-table td {
+                padding: 10px 12px;
+            }
+        }
 

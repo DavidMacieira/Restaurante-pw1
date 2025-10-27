@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">  
+    <title>Formulario de Reservas</title>
+</head>
+
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+} 
+li a:hover {
+  background-color: #555555;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Restaurante</h2>
+
+<ul>
+    <li><a href="./index.html">Inicio</a></li>
+  <li><a href="./entradas.html">Entradas</a></li>
+  <li><a href="./carne.html">Pratos de Carne</a></li>
+  <li><a href="./peixe.html">Pratos de Peixe</a></li>
+   <li><a href="./reservas.html">Reservar</a></li>
+</ul>
+
+<table>
+  <tr>
+    <td><label for="name">Nome:</label></td>
+    <td column-span="3"><input type="text" id="name" name="name"></td>
+  </tr>
+  <tr>
+    <td><label for="email">Email:</label></td>
+    <td column-span="3"><input type="email" id="email" name="email"></td>
+  </tr>
+  <tr>
+    <td><label for="date">Data da Reserva:</label></td>
+    <td column-span="3"><input type="datetime-local" id=datetime-local name ="date" min="2025-10-20T00:00"  value="2025-10-20T00:00"></td> 
+  </tr>
+  <tr>
+    <td><label for="numero_pessoas">Número de Pessoas:</label></td>
+    <td>
+      <select name="numero_pessoas" id="numero_pessoas">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><input type="submit" value="Reservar"></td>
+</table>
+
+</body>
+</html>
+
+
